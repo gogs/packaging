@@ -18,7 +18,7 @@ Steps for Centos 7:
      * go get -u -tags "sqlite tidb pam cert" github.com/gogits/gogs
      * go build  -x tags "sqlite tidb pam cert"  .
   *  gogs and packaging repo at same level.
-      [me@centos7 ws]$ tree -L 1 packaging gogs
+      
         packaging
         ├── build.txt
         ├── gogs.service
