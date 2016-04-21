@@ -19,6 +19,7 @@ Steps for Centos 7:
      * go build  -x tags "sqlite tidb pam cert"  .
   *  Put gogs and packaging repos at same level.
 
+
        packaging
        ├── LICENSE
        ├── README.md
