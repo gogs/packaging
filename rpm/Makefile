@@ -31,7 +31,7 @@ $(error Unknown arch "$(ARCH)".)
 endif
 
 # RPM_ARCH := noarch
-rpm:
+tball: 
 	# @create gogs tar ball.
 	(cd $(GOGSDIR);rm -f $(GOGSVERSION))
 	(cd $(GOGSDIR);ln -s . $(GOGSVERSION))
@@ -40,6 +40,9 @@ rpm:
 	# build the rpm using rpmbuild from ./rmbuild as topdir
 	rm -rf ${WDIR}/rpmbuild && mkdir -p ${WDIR}/rpmbuild/SOURCES
 	cp  $(GOGSDIR)/$(GOGSVERSION).tar.gz ${WDIR}/rpmbuild/SOURCES/$(GOGSVERSION).tar.gz
+build: tball
+	rpmbuild -bb --define "_topdir ${WDIR}/rpmbuild"   ./gogs.spec
+rpm:  tball
 	rpmbuild -ba --define "_topdir ${WDIR}/rpmbuild"   ./gogs.spec
 gitcommit:
 	git commit -a -m "lazy commit via make gitpush"
