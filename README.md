@@ -17,15 +17,15 @@ Steps for Centos 7:
   *  make sure rpmbuild environment in your home is setup.
      * go get -u -tags "sqlite tidb pam cert" github.com/gogits/gogs
      * go build  -x tags "sqlite tidb pam cert"  .
-  *  gogs and packaging repo at same level.
-      
-        packaging
-        ├── build.txt
-        ├── gogs.service
-        ├── gogs.spec
-        ├── LICENSE
-        ├── Makefile
-        └── README.md
+  *  Put gogs and packaging repos at same level.
+
+       packaging
+       ├── LICENSE
+       ├── README.md
+       └── rpm
+           ├── gogs.service
+           ├── gogs.spec
+           └── Makefile
 
         gogs
         ├── cmd
