@@ -19,7 +19,7 @@ Steps for Centos 7:
      * go build  -x tags "sqlite tidb pam cert"  .
   *  Put gogs and packaging repos at same level.
 
-
+```
        packaging
        ├── LICENSE
        ├── README.md
@@ -49,7 +49,7 @@ Steps for Centos 7:
         ├── routers
         ├── scripts
         └── templates
-
+```
 
   *  Genereate gogs binary at gogs top directory.
   *  "make -n" to see the dryrun and "make" to create gogs rpm.
