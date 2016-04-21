@@ -51,6 +51,8 @@ Steps for Centos 7:
         └── templates
 ```
 
-  *  Genereate gogs binary at gogs top directory.
-  *  "make -n" to see the dryrun and "make" to create gogs rpm.
+  *  "cd gogs" to genereate gogs binary at gogs top directory.
+  *  "cd ../packaging" to creating rpm.
+     *  "make -n" to see the dryrun 
+     *  "make" or "make rpm" to create gogs rpm.
 
