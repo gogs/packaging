@@ -48,7 +48,7 @@ Steps for Centos 7:
         ├── routers
         ├── scripts
         └── templates
-      [me@centos7 ws]$ tree -L 1 packaging gogs
+
 
   *  Genereate gogs binary at gogs top directory.
   *  "make -n" to see the dryrun and "make" to create gogs rpm.
