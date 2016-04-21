@@ -50,6 +50,9 @@ gitcommit:
 gitpush: gitcommit
 	git push origin develop
 
+pulldevelop: 
+	git pull origin develop
+
 installrpm: 
 	sudo $(RPM) -Uvh $(HOME)/rpmbuild/RPMS/x86_64/gogs-$(RPMVERSION).x86_64.rpm
 removerpm:
